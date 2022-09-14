@@ -5,20 +5,30 @@ header{
     z-index: 1;
     width: 100%;
     display: flex;
+    align-items: center;
+}
+
+header select{
+    height: 2.5rem;
+    background-color: #1e2d3b;
+    color: white;
+    border: none;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+header button{
+    height: 2.5rem;
+    margin-left: 1rem;
+    border: none;
+    background-color: #1e2d3b;
+    color: white;
+    padding: .5rem;
+    border-radius: .5rem;
 }
 
 header img{
     height: 2rem;
-    margin: 1rem;
-}
-
-header ul{
-    list-style: none;
-}
-
-header ul li{
-    display: inline-block;
-    color: white;
     margin: 1rem;
 }
 

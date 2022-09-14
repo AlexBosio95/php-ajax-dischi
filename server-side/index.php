@@ -15,6 +15,7 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="" srcset="">
         <select name="genere" id="" v-model="currentGenere">
             <option disabled value="">Please select genre</option>
+            <option value="">All</option>
             <option v-for="(data, index) in generi" :value="data">{{data}}</option>
         </select>
         <button @click="getSelectApi()">cerca</button>
