@@ -10,7 +10,7 @@ var app = new Vue({
         getSelectApi(){
             this.myArray = [];
 
-            axios.get('http://localhost/php-ajax-dischi/server-side/api.php' + '?genre=' + this.currentGenere)
+            axios.get('http://localhost/php-ajax-dischi/server-side/api.php' + '?genere=' + this.currentGenere)
             .then(response => {
             this.myArray = response.data;
         })
