@@ -13,9 +13,11 @@
 
     <header>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="" srcset="">
-        <!-- <select method="post" name="genere" id="">
-            <option v-for="(data, index) in myArray" :value="data.genre">{{data.genre}}</option>
-        </select> -->
+        <select name="genere" id="" v-model="currentGenere">
+            <option disabled value="">Please select genre</option>
+            <option v-for="(data, index) in generi" :value="data">{{data}}</option>
+        </select>
+        <button @click="getSelectApi()">cerca</button>
     </header>
 
     <main>

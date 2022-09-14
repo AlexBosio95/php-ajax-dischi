@@ -8,12 +8,15 @@ if (empty($_GET['genere'])) {
     echo json_encode($database);
     
 } else {
-    
+
     $arrayFiltered = [];
     $genere = $_GET['genere'];
 
     foreach ($database as $key => $value) {
-        $arrayFiltered[] = $value[$genere];
+
+        if ($value['genre'] == $genere){
+            $arrayFiltered[] = $value;
+        }
     }
 
     echo json_encode($arrayFiltered);
