@@ -4,11 +4,27 @@ header{
     position: fixed;
     z-index: 1;
     width: 100%;
+    display: flex;
 }
 
 header img{
     height: 2rem;
     margin: 1rem;
+}
+
+header ul{
+    list-style: none;
+}
+
+header ul li{
+    display: inline-block;
+    color: white;
+    margin: 1rem;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
 }
 
 main{
