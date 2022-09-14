@@ -26,7 +26,11 @@ var app = new Vue({
             this.myArray = response.data;
 
             this.myArray.forEach(element => {
-                this.generi.push(element.genre);
+
+                if (!this.generi.includes(element.genre)) {
+                    this.generi.push(element.genre);
+                };
+
             });
         });
 
