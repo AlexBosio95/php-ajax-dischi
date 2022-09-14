@@ -13,9 +13,9 @@
 
     <header>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="" srcset="">
-        <ul>
-            <li v-for="(data, index) in myArray"><a href="">{{data.genre}}</a></li> 
-        </ul>
+        <!-- <select method="post" name="genere" id="">
+            <option v-for="(data, index) in myArray" :value="data.genre">{{data.genre}}</option>
+        </select> -->
     </header>
 
     <main>
